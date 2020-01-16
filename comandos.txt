@@ -1,0 +1,5 @@
+virtualenv venv --python=python3 == cria projeto
+source venv/bin/activate = inicia projeto
+pip install django = instala django
+django-admin startproject 'name' =  incia projeto django
+python manage.py runserver = start o projecto
