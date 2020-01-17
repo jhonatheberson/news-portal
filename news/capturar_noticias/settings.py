@@ -39,8 +39,15 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'portal',
-    
+
+
 ]
+
+REST_FRAMEWORK = {
+    "DEFAULT_RENDERER_CLASSES": (
+        "rest_framework.renderers.JSONRenderer",
+    )
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
