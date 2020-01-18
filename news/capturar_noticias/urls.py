@@ -19,13 +19,11 @@ from django.urls import path
 
 
 
-from portal.views import news_view
+
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
-    path('news/', news_view),
     path('', include('portal.urls'))
    
 ]
