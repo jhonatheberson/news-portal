@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'portal',
     'crispy_forms',
+    'bs4',
 
 
 ]
