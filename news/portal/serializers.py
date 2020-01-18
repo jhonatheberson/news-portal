@@ -3,18 +3,21 @@ from rest_framework import serializers
 
 
 class PortalSerializer(serializers.ModelSerializer):
+    """
+    portal serialization
+    """
     class Meta:
-        model = Portal
+        model = Portal  # shows all the bank fields
         fields = '__all__'
 
 
 class NewsSerializer(serializers.ModelSerializer):
-    # como vai ser os arquivos para API
-    # title: serializers.CharField()
-    # portal: serializers.CharField()
-    # portal = PortalSerializer()
-
+    """
+    same thing if it were done like that
+    title: serializers.CharField()
+    portal: serializers.CharField()
+    portal = PortalSerializer()
+    """
     class Meta:
         model = News
-        # fields = '__all__' # mostra tudos os campos do banco
-        exclude = ['id']  # exclui o que vai mostrar, também no input
+        exclude = ['id']  # excludes what will show (get), also in the input

@@ -37,10 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'portal',
-    'crispy_forms',
-    'bs4',
+    'rest_framework', #Framework for api
+    'portal', # include app
+    'crispy_forms', # include framework the form
+    'bs4', #include liblary the web scraping
 
 
 ]
@@ -131,4 +131,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap4' #included static variable vbootstrap4

@@ -18,12 +18,8 @@ from django.contrib import admin
 from django.urls import path
 
 
-
-
-
-
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('portal.urls'))
-   
+    path('admin/', admin.site.urls),  #router the admin
+    path('', include('portal.urls'))  #router the main
+
 ]

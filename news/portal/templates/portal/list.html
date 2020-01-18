@@ -1,16 +1,17 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %}<!--inclusion of html base template-->
 
 {% block title  %}
-Portal News
+Portal News <!--implemented page title-->
 {% endblock  %}
 
 
 {% block content %}
 <div class="offset-1 col-10 list-div">
-  <h1>News</h1>
+  <!--subtitle implemented-->
+  <h1>News</h1> 
   <div class="col-2 add-div">
-
   </div>
+  <!--implemented search box-->
   <div class="col-12 search-div">
     <form method="GET" id="search-form">
       <input class="form-control" class="container-fluid" type="text " id="search" name="search"
@@ -18,7 +19,7 @@ Portal News
       <i class="fas fa-search" id="search-btn"> </i>
     </form>
   </div>
-
+  <!--implemented to retrieve the news from the database-->
   <ul class="news-list">
     {% for new in news %}
     <li class="news-item">
@@ -27,7 +28,7 @@ Portal News
     </li>
     {% endfor %}
   </ul>
-
+  <!--implemented pagination with the aim of minimizing requests-->
   <div class="pagination">
     <span class="step-links">
       {% if news.has_previous %}

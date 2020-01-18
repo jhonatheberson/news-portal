@@ -1,8 +1,10 @@
 {% load static %}
+<!--base template for all other pages-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+  <!--bootstrap navigation bar-->
   <link rel="shortcut icon" href="portal/news.ico" type="image/x-icon" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale-1.0">
@@ -17,23 +19,15 @@
   <div class="container-fluid">
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="/">Portal News</a>
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </nav>
 
     {% block content %}{% endblock %}
 
     <footer>
-
-      <p>Portal News</p>
-
-
+      <p>Portal News</p>  <!--footer implemented-->
     </footer>
-
   </div>
-
+  <!--inclusion of DCM libraries-->
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
   <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"

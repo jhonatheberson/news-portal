@@ -1,7 +1,9 @@
-{% extends 'base.html' %}
-
+{% extends 'base.html' %} <!--inclusion of html base template-->
 {% block content %}
+<!--page when clicking on a news item, it was not done
+ well because it is not a system requirement-->
 <div class="card" style="width: 18rem;">
+<!--bootstrap card-->
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">{{news.title}}</h5>
