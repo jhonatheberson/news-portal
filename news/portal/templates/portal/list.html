@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title  %}
+Portal News
+{% endblock  %}
+
+
+{% block content %}
+<div class="offset-1 col-10 list-div">
+  <h1>News</h1>
+  <div class="col-2 add-div">
+
+  </div>
+  <div class="col-12 search-div">
+    <form method="GET" id="search-form">
+      <input class="form-control" class="container-fluid" type="text " id="search" name="search"
+        placeholder="Digite o assunto de notícia para buscar" value="{{ request.GET.search}}">
+      <i class="fas fa-search" id="search-btn"> </i>
+    </form>
+  </div>
+
+  <ul class="news-list">
+    {% for new in news %}
+    <li class="news-item">
+      <span><a href="/news/{{new.id}}">{{new.title}}</a></span>
+      <span><i class="fas fa-newspaper"></i></span>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <div class="pagination">
+    <span class="step-links">
+      {% if news.has_previous %}
+      <a href="?page={{ news.previous_page_number }}"><i class="fas fa-arrow-left"></i></a>
+      {% endif %}
+      {% if news.paginator.num_pages %}
+      <span class="corrent">
+        {{ news.number}} de {{news.paginator.num_pages}}
+      </span>
+      {% endif %}
+      {% if news.has_next %}
+      <a href="?page={{ news.next_page_number }}"><i class="fas fa-arrow-right"></i></a>
+      {% endif %}
+    </span>
+  </div>
+</div>
+{%endblock%}
