@@ -1,0 +1,40 @@
+virtualenv venv --python=python3 == cria projeto
+source venv/bin/activate = inicia projeto
+pip install django = instala django
+django-admin startproject 'name' =  incia projeto django
+python manage.py runserver = start o projecto
+python manage.py migrate =  roda todas as migrações para o banoc de dados
+python manage.py makemigrations = roda migrações que eu implantei
+python manage.py migrate = tras a migrações para dentro do banco
+
+
+makemigrations e migrate = alteração do banco
+sempre que quero altarar um compo é melhor escluir e cria de novo
+
+
+python manage.py createsuperuser = cria usuario para banco
+username: itrack
+senha :a1D1$357
+localhost/admin =  entra no acesso ao banco de dados
+
+para aparecer no banco o model tem que editar 'admin.py' do projecto
+e colocar
+"from .models import News
+# Register your models here.
+
+admin.site.register(News)
+"
+pip install djangorestframework = farmework de rest
+mudamos a aplicação precisamos mudar settings incluir o que colocado
+"INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    ''rest_framework',
+    'portal',"
+
+
+$ pip freeze > requirements.txt = lista todas as depdencias do projeto
