@@ -11,41 +11,108 @@ clone this repository and install the "requirements.txt" dependencies, after tha
 ```
 
 ### Prerequisites
-
+```
 asgiref==3.2.3
+```
+```
 astroid==2.3.3
+```
+```
 autopep8==1.4.4
+```
+```
 beautifulsoup4==4.8.2
+```
+```
 bs4==0.0.1
+```
+```
 certifi==2019.11.28
+```
+```
 chardet==3.0.4
+```
+```
 coreapi==2.3.3
+```
+```
 coreschema==0.0.4
+```
+```
 Django==3.0.2
+```
+```
 django-crispy-forms==1.8.1
+```
+```
 django-rest-swagger==2.2.0
+```
+```
 djangorestframework==3.11.0
+```
+```
 idna==2.8
+```
+```
 isort==4.3.21
+```
+```
 itypes==1.1.0
+```
+```
 Jinja2==2.10.3
+```
+```
 lazy-object-proxy==1.4.3
+```
+```
 MarkupSafe==1.1.1
+```
+```
 mccabe==0.6.1
+```
+```
 openapi-codec==1.3.2
+```
+```
 pycodestyle==2.5.0
+```
+```
 pylint==2.4.4
+```
+```
 pytz==2019.3
+```
+```
 requests==2.22.0
+```
+```
 selenium==3.141.0
+```
+```
 simplejson==3.17.0
+```
+```
 six==1.14.0
+```
+```
 soupsieve==1.9.5
+```
+```
 sqlparse==0.3.0
+```
+```
 typed-ast==1.4.1
+```
+```
 uritemplate==3.0.1
+```
+```
 urllib3==1.25.7
+```
+```
 wrapt==1.11.2
+```
 
 
 
@@ -98,4 +165,4 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## Acknowledgments
 
-* Adelardo Adelino Dantas de Memeiros
+
